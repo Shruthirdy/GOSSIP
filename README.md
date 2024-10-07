@@ -40,13 +40,13 @@ Push-Sum is an algorithm for distributed sum computation. Each actor maintains t
 ## Project Implementation
 #### 1. Main Program:
 The program accepts the following command-line arguments: <numNodes> <topology> <algorithm>.
--> total_nodes: Total number of actors (nodes).
--> topology: The network topology (full, 3D, line, imp3D).
--> algorithm: The algorithm to run (gossip, pushsum).
+- total_nodes: Total number of actors (nodes).
+- topology: The network topology (full, 3D, line, imp3D).
+- algorithm: The algorithm to run (gossip, pushsum).
 
 #### 2. Topologies:
--> Functions build_full_topology, build_3d_topology, build_line_topology, and build_imperfect_3d_topology are written to build the respective network topologies.
--> Each node is assigned its neighbors based on the chosen topology.
+- Functions build_full_topology, build_3d_topology, build_line_topology, and build_imperfect_3d_topology are written to build the respective network topologies.
+- Each node is assigned its neighbors based on the chosen topology.
 
 #### 3. Gossip Algorithm:
 Actors pass the rumor to randomly selected neighbors. The algorithm terminates once each actor has received the rumor 10 times.
