@@ -74,9 +74,9 @@ Example
 3. Convergence time is correctly measured and displayed for different network sizes and topologies.
 
 ## Largest Network Handled:
-Full Network: 10,000 nodes.
-3D Grid: 10,000 nodes.
-Line: 10,000 nodes.
-Imperfect 3D Grid: 10,000 nodes.
+- Full Network: 10,000 nodes.
+- 3D Grid: 10,000 nodes.
+- Line: 10,000 nodes.
+- Imperfect 3D Grid: 10,000 nodes.
 
 
