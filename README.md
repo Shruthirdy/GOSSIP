@@ -20,8 +20,8 @@ The network of actors can be set up in the following topologies:
 
 ## Algorithms
 ### Gossip Algorithm
-Description: Gossip algorithms are used for information propagation in distributed networks. Each actor (node) starts by receiving a rumor and continues passing it to a randomly chosen neighbor. The actor stops propagating the rumor after hearing it 10 times.
-Steps:
+### Description: Gossip algorithms are used for information propagation in distributed networks. Each actor (node) starts by receiving a rumor and continues passing it to a randomly chosen neighbor. The actor stops propagating the rumor after hearing it 10 times.
+### Steps:
 1. One actor starts the rumor.
 2. Every actor chooses a random neighbor and sends the rumor.
 3. Each actor keeps a count of how many times it has received the rumor.
