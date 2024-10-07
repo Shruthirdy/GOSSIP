@@ -57,10 +57,26 @@ Each actor maintains its sum_value(s) and weight_value(w) and communicates updat
 #### 5. Termination:
 The Boss actor controls the system and terminates the simulation once convergence is achieved for the chosen algorithm.
 
-Running the Project:
-The project can be compiled and run with the following commands:
+## Running the Project
+The project can be compiled and run with the following command:
 
 ```bash
 ./GOSSIP <total_nodes> <topology> <algorithm>
+```
+Example
+```bash
+./GOSSIP 10000 imp3D gossip
+```
+
+## What Is Working
+1. Both Gossip and Push-Sum algorithms are implemented.
+2. The project supports all the required topologies (full, 3D, line, imperfect 3D).
+3. Convergence time is correctly measured and displayed for different network sizes and topologies.
+
+## Largest Network Handled:
+Full Network: 10,000 nodes.
+3D Grid: 10,000 nodes.
+Line: 10,000 nodes.
+Imperfect 3D Grid: 10,000 nodes.
 
 
