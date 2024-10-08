@@ -69,9 +69,11 @@ Example
 ```
 
 ## What Is Working
-1. Both Gossip and Push-Sum algorithms are implemented.
-2. The project supports all the required topologies (full, 3D, line, imperfect 3D).
-3. Convergence time is correctly measured and displayed for different network sizes and topologies.
+1. Both Gossip and Push-Sum algorithms are implemented and are working as expected.
+2. For gossip algorithm after receiving 10 rumors the algorithm is terminated.
+3. For pushsum algorithm, if the sum_value/weight_value (s/w) doesn't change more than 10^-10 after 3 consecutive rounds the algorithm terminates.
+4. The project supports all the required topologies (full, 3D, line, imperfect 3D) for both the algorithms.
+5. Convergence time is correctly measured and displayed for different network sizes and topologies.
 
 ## Largest Network Handled:
 - Full Network: 10,000 nodes.
